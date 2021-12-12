@@ -27,7 +27,7 @@ public class Main extends AppCompatActivity {
         //Boolean fraction = i.getBooleanExtra("fraction");
 
 
-// Identify the elements on the Activit
+// Identify the elements on the Activity
         TextView correct_answer_counter = findViewById(R.id.correct_answer_counter_textview);
         TextView wrong_answer_counter = findViewById(R.id.wrong_answer_counter_textview);
         TextView question_display = findViewById(R.id.question_display);
