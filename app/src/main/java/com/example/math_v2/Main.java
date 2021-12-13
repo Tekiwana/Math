@@ -100,10 +100,12 @@ public class Main extends AppCompatActivity {
     public String generate_question(String operation){
         int num1 = random.nextInt(100);
         int num2 = random.nextInt(100);
+
 // ADD
         if (operation.equals("+")){
             question_string = String.valueOf(num1)+" "+operation+" "+String.valueOf(num2);
             return question_string;
+
 // SUBTRACT. Answer cannot be < 0.
         }else if (operation.equals("-")){
             while (num1-num2 < 0){
@@ -112,6 +114,7 @@ public class Main extends AppCompatActivity {
             }
             question_string = String.valueOf(num1)+" "+operation+" "+String.valueOf(num2);
             return question_string;
+
 //DIVIDE. Answer can be INT only.
         }else if (operation.equals("/")){
             while (num1%num2 != 0){
@@ -121,6 +124,7 @@ public class Main extends AppCompatActivity {
             }
             question_string = String.valueOf(num1)+" "+operation+" "+String.valueOf(num2);
             return question_string;
+
 //MULTIPLY. Up to 20.
         }else{
             while (num1 >= 21 | num2 >= 21){
